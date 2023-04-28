@@ -8,8 +8,8 @@ import webbrowser
 pipe = pickle.load(open('pipe.pkl','rb'))
 df = pickle.load(open('df.pkl','rb'))
 if st.button('Home'):
-    webbrowser.open_new_tab('https://website-prediction.s3.jp-tok.cloud-object-storage.appdomain.cloud/index.html')
-
+    #webbrowser.open_new_tab('https://website-prediction.s3.jp-tok.cloud-object-storage.appdomain.cloud/index.html')
+    st.markdown(webbrowser.open_new_tab('https://website-prediction.s3.jp-tok.cloud-object-storage.appdomain.cloud/index.html'))
 st.title("Laptop Predictor")
 
 # brand
