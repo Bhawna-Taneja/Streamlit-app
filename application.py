@@ -9,7 +9,10 @@ pipe  = pickle.load(open('LinearRegressionModek.pkl','rb'))
 df = pickle.load(open('df1.pkl','rb'))
 
 if st.button('Home'):
-    webbrowser.open_new_tab('https://website-prediction.s3.jp-tok.cloud-object-storage.appdomain.cloud/index.html')
+    #add a link to the button
+    href = 'https://website-prediction.s3.jp-tok.cloud-object-storage.appdomain.cloud/index.html'
+    target = '_blank'
+    st.markdown(f'<a href="{href}" target="{target}">Home</a>', unsafe_allow_html=True)
     
 st.title("Car Predictor")
 
