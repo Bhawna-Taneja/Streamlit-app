@@ -9,7 +9,7 @@ pipe = pickle.load(open('pipe.pkl','rb'))
 df = pickle.load(open('df.pkl','rb'))
 
 if st.button('Home'):
-    add a link to the button
+    #add a link to the button
     href = 'https://website-prediction.s3.jp-tok.cloud-object-storage.appdomain.cloud/index.html'
     target = '_blank'
     st.markdown(f'<a href="{href}" target="{target}">Home</a>', unsafe_allow_html=True)
