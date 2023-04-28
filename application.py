@@ -2,10 +2,15 @@ import streamlit as st
 import pickle
 import numpy  as np
 import pandas as pd
+import webbrowser
 
 # import the model
 pipe  = pickle.load(open('LinearRegressionModek.pkl','rb'))
 df = pickle.load(open('df1.pkl','rb'))
+
+if st.button('Home'):
+    webbrowser.open_new_tab('https://website-prediction.s3.jp-tok.cloud-object-storage.appdomain.cloud/index.html')
+    
 st.title("Car Predictor")
 
 # company
