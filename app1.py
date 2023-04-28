@@ -2,10 +2,13 @@ import streamlit as st
 import pickle
 import numpy as np
 import sklearn
+import webbrowser
 
 # import the model
 pipe = pickle.load(open('pipe.pkl','rb'))
 df = pickle.load(open('df.pkl','rb'))
+if st.button('Home'):
+    webbrowser.open_new_tab('https://website-prediction.s3.jp-tok.cloud-object-storage.appdomain.cloud/index.html')
 
 st.title("Laptop Predictor")
 
